@@ -1,0 +1,247 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+* {
+  box-sizing: border-box;
+  -webkit-transition-property: height 1s;
+  transition-property: height 1s;
+}
+
+body {
+  background-color: #232323;
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+input[type=text] {
+  all: none;
+  flex: 1;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #555;
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15pt;
+}
+
+input[type=text]:focus {
+  outline: none;
+  background-color: #333;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer {
+  font-family: helvetica-light;
+  text-align: center;
+  padding: 15px;
+  color: #ccc;
+  min-width: 300px;
+  font-size: 10pt;
+}
+
+.game {
+  margin: auto;
+  max-width: 600px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25pt;
+}
+
+.ailevel {
+  display: none;
+}
+
+.easyai {
+  background-color: #773;
+}
+
+.averageai {
+  background-color: #753;
+}
+
+.expertai {
+  background-color: #b43;
+}
+
+.playertype {
+  background-color: #555;
+}
+
+.playertype div {
+  width: 50%;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.playertype div div {
+  line-height: 35px;
+  height: 35px;
+}
+
+.playertype div div:hover {
+  background-color: #444;
+}
+
+.playertype div div:active {
+  background-color: #333;
+}
+
+.xobutton {
+  text-transform: uppercase;
+}
+
+#p1type {}
+
+#p2type {}
+
+.startReset {
+  line-height: 75px;
+  height: 75px;
+}
+
+.start {
+  flex-grow: 3;
+  width: 75%;
+  text-align: center;
+  background-color: #575;
+}
+
+.start:hover {
+  background-color: #595;
+}
+
+.start:active {
+  background-color: #484;
+}
+
+.startactive {
+  background-color: #494;
+}
+
+.reset {
+  flex-grow: 1;
+  text-align: center;
+  background-color: #655;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #855;
+}
+
+.reset:active {
+  background-color: #844;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12pt;
+  background-color: #171717;
+}
+
+.scoreboard div {
+  width: 50%;
+  line-height: 25px;
+  text-align: center;
+}
+
+.activeplayer {
+  background-color: #248;
+}
+
+.board {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: none;
+}
+
+.row {
+  float: left;
+  width: 100%;
+}
+
+.space {
+  float: left;
+  position: relative;
+  xborder: 1px solid #222;
+  background-color: #333;
+  width: calc(100% / 3);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlightVictory {
+  background-color: #388;
+}
+
+.tieboard {
+  background-color: #665;
+}
+
+.gamespace:hover {
+  background-color: #444;
+}
+
+.gamespace:active {
+  background-color: #555;
+}
+
+.markX {
+  font-size: 100pt;
+  text-align: center;
+}
+
+.markO {
+  font-size: 75pt;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .options div {
+    display: block;
+    width: 100%;
+    font-size: 15pt;
+  }
+  .startReset {
+    line-height: 50px;
+    height: 50px;
+  }
+  .space {
+    height: 125px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .options div {
+    display: block;
+    width: 100%;
+    font-size: 20pt;
+  }
+  
+  .startReset {
+    line-height: 50px;
+    height: 50px;
+  }
+  .space {
+    height: 125px;
+  }
+}
